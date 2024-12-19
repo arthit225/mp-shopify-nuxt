@@ -1,0 +1,368 @@
+// Saol Display
+// Saol Display
+// Saol Display
+// Saol Display
+@font-face {
+  font-family: 'Saol Display';
+  src: url('~/assets/fonts/saol-display/SaolDisplay-Regular.woff2') format('woff2'),
+    url('~/assets/fonts/saol-display/SaolDisplay-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Saol Display LightItalic';
+  src: url('~/assets/fonts/saol-display/SaolDisplay-LightItalic.woff2') format('woff2'),
+    url('~/assets/fonts/saol-display/SaolDisplay-LightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Saol Display Light';
+  src: url('~/assets/fonts/saol-display/SaolDisplay-Light.woff2') format('woff2'),
+    url('~/assets/fonts/saol-display/SaolDisplay-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+.saol-display-regular {
+  font-family: 'Saol Display';
+  font-weight: normal;
+  font-style: normal;
+}
+
+.saol-display-light {
+  font-family: 'Saol Display Light' !important;
+  font-weight: 300;
+  font-style: normal;
+	em, i {
+		font-family: 'Saol Display LightItalic';
+		letter-spacing: -0.03em;
+	}
+}
+
+.saol-display-light-italic {
+  font-family: 'Saol Display LightItalic' !important;
+  font-weight: 300;
+  font-style: italic;
+	letter-spacing: -0.03em;
+}
+.membership-hero__title {
+	@extend .heading-xl;
+	font-family: 'Saol Display Light' !important;
+}
+//WindSong
+@font-face {
+  font-family: 'WindSong';
+  src: url('~/assets/fonts/windsong/WindSong-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'WindSong';
+  src: url('~/assets/fonts/windsong/WindSong-Medium.ttf');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+.windsong-display-regular {
+  font-family: 'WindSong';
+  font-weight: normal;
+  font-style: normal;
+}
+.windsong-display-italic {
+  font-family: 'WindSong';
+  font-weight: 500;
+  font-style: italic;
+}
+// ---------------------------------------------------------
+// ---------------------------------------------------------
+
+// FUTURA STD
+// FUTURA STD
+// FUTURA STD
+// FUTURA STD
+@font-face {
+  font-family: 'Futura Std';
+  src: url('~/assets/fonts/futura-std/FuturaStd-Book.woff2') format('woff2'),
+    url('~/assets/fonts/futura-std/FuturaStd-Book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Futura Std';
+  src: url('~/assets/fonts/futura-std/FuturaStd-Book.woff2') format('woff2'),
+    url('~/assets/fonts/futura-std/FuturaStd-Book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Futura Std';
+  src: url('~/assets/fonts/futura-std/FuturaStd-Medium.woff2') format('woff2'),
+    url('~/assets/fonts/futura-std/FuturaStd-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Futura Std';
+  src: url('~/assets/fonts/futura-std/FuturaStd-BookOblique.woff2') format('woff2'),
+    url('~/assets/fonts/futura-std/FuturaStd-BookOblique.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Futura Std';
+  src: url('~/assets/fonts/futura-std/FuturaStd-LightOblique.woff2') format('woff2'),
+    url('~/assets/fonts/futura-std/FuturaStd-LightOblique.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Futura Std';
+  src: url('~/assets/fonts/futura-std/FuturaStd-MediumOblique.woff2') format('woff2'),
+    url('~/assets/fonts/futura-std/FuturaStd-MediumOblique.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Futura Std';
+  src: url('~/assets/fonts/futura-std/FuturaStd-Light.woff2') format('woff2'),
+    url('~/assets/fonts/futura-std/FuturaStd-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+.futura-std-medium {
+  font-family: 'Futura Std';
+  font-weight: 500;
+  font-style: normal;
+}
+.fu-font-medium{
+  letter-spacing: 0.01em;
+  line-height: 1.6;
+  font-weight: normal;
+}
+
+.futura-std-regular {
+  font-family: 'Futura Std';
+  font-weight: normal;
+  font-style: normal;
+}
+
+.futura-std-light {
+  font-family: 'Futura Std';
+  font-weight: 300;
+  font-style: normal;
+}
+
+.futura-std-light-italic {
+  font-family: 'Futura Std';
+  font-weight: 300;
+  font-style: italic;
+}
+// ---------------------------------------------------------
+// ---------------------------------------------------------
+
+// Font size
+
+// Heading
+.heading {
+
+  &-xl {
+    font-size: toRem(54);
+    font-family: 'Saol Display LightItalic';
+    font-weight: 300;
+    font-style: italic;
+    line-height: .93;
+    @screen md {
+      font-size: toRem(100);      
+    }
+  }
+  &-l {
+    font-size: toRem(43);
+    font-family: 'Saol Display LightItalic';
+    line-height: 1.21;
+    @screen md {
+      font-size: toRem(83);
+    }
+  }
+  &-m {
+    font-size: toRem(34);
+    font-family: 'Saol Display';
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.06;
+    i, em {
+      font-family: 'Saol Display LightItalic';
+      letter-spacing: -.03em;
+    }
+    @screen md {
+      font-size: toRem(52);
+    }
+  }
+  &-sm {
+    font-size: toRem(34);
+    @screen md {
+      font-size: toRem(27);
+    }
+  }
+  &-xs {
+    font-size: toRem(18);
+    @screen md {
+      font-size: toRem(22);
+    }
+  }
+}
+
+.slug {
+  &-l {
+    font-size: toRem(22);
+    letter-spacing: toRem(2);
+    @screen md {
+      font-size: toRem(22);
+    }
+  }
+  &-sm {
+    line-height: 1;
+    font-size: toRem(16);
+    letter-spacing: toRem(2);
+  }
+  &-m {
+    line-height: 1.1;
+    font-size: toRem(18);
+    letter-spacing: toRem(2);
+    @screen md {
+      font-size: toRem(18);
+    }
+  }
+  &-xs {
+    letter-spacing: 2px;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+}
+
+.subheading {
+  &-xl {
+    font-size: toRem(18);
+    @screen md {
+      font-size: toRem(11);
+    }
+  }
+  &-l {
+    font-size: toRem(16);
+    @screen md {
+      font-size: toRem(12);
+    }
+  }
+  &-m {
+    font-size: toRem(14);
+    @screen md {
+      font-size: toRem(12);
+    }
+  }
+  &-sm {
+    font-size: toRem(16);
+    @screen md {
+      font-size: toRem(12);
+    }
+  }
+}
+
+// ---------- Only for Mobile ----------
+.text-mobile {
+  &-xl {
+    @screen md-down {
+      font-size: toRem(54);
+    }
+  }
+  &-l {
+    @screen md-down {
+      font-size: toRem(27);
+    }
+  }
+  &-xs {
+    @screen md-down {
+      font-size: toRem(12);
+    }
+  }
+}
+// -------------------------------------
+
+// .h {
+//   &1 {
+//     font-size: toRem(34);
+//     @screen md {
+//       font-size: toRem(52);
+//     }
+//     &-large {
+//       font-size: toRem(50);
+//       @screen md {
+//         font-size: toRem(100);
+//       }
+//     }
+//   }
+//   &2 {
+//     font-size: toRem(36);
+//     @screen md {
+//       font-size: toRem(48);
+//     }
+//   }
+//   &3 {
+    
+//   }
+//   &4 {
+    
+//   }
+//   &5 {
+    
+//   }
+//   &6 {
+    
+//   }
+// }
+
+// Text
+.text {
+  &-extra-small {
+    font-size: toRem(12);
+  }
+  &-small {
+    font-size: toRem(14);
+  }
+  &-base {
+    font-size: toRem(16);
+  }
+  &-medium {
+    font-size: toRem(18);
+    @screen md-down {
+    font-size: toRem(14);
+    }
+  }
+  &-large {
+    font-size: toRem(20);
+  }
+  &-extra-large {
+    font-size: toRem(24);
+  }
+}

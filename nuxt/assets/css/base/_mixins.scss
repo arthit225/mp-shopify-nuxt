@@ -1,0 +1,39 @@
+@use "sass:math";
+
+@function toRem($value) {
+    $remValue: math.div($value, 16) + rem;	
+    @return $remValue;
+}
+@keyframes underline {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+.has-fancy-underline-children a,
+.fancy-underline {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -0.0325em;
+    left: 0;
+    width: 100%;
+    transform: scaleX(0);
+    height: 0.0625rem;
+    background: currentColor;
+    transition: transform .3s;
+    transform-origin: bottom left;
+  }
+  &:hover::before {
+    transform: scaleX(1);
+    animation: underline .5s;
+  }
+}
+.fancy-underline--has-underline {
+  &::before {
+    transform: scaleX(1);
+  }
+}

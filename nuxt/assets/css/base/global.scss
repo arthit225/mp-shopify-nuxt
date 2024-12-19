@@ -1,0 +1,170 @@
+//Smooth fonts
+.smooth-fonts {
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale; 
+}
+//Lazyload.
+
+//lazyload
+.lazyload,
+.lazyloading {
+  &:not(.ls-is-cached) {
+    opacity: 0;
+    transition: opacity ease-in-out 0.5s;
+    &.blur-up {
+      opacity: 1;
+      filter: blur(2px);
+    }
+  }
+}
+.lazyloaded {
+  &:not(.ls-is-cached) {
+    transition: opacity ease-in-out 0.5s;
+    opacity: 1;
+    &.blur-up {
+      opacity: 1;
+      filter: none;
+    }
+  }
+}
+
+.loader {
+  border: 10px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 10px solid black;
+  width: 80px;
+  height: 80px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+// Swiper
+.swiper {
+  .swiper-slide {
+    height: auto;
+    -webkit-transform: translateZ(0);
+  }
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+//Main style.
+body {
+  background-color: white;
+  font-family: "Futura Std", Arial, Helvetica, sans-serif;
+  @extend .smooth-fonts;
+}
+
+form {
+  .form-field {
+    position: relative;
+    margin-top: toRem(24);
+    .errors {
+      position: absolute;
+      bottom: 100%;
+      font-size: toRem(12);
+    }
+  }
+}
+.big-underline {
+  display: inline-block;
+  position: relative;
+  letter-spacing: toRem(1);
+}
+.big-underline:after {
+  background: #fa6140;
+  top: calc(50% - 2px);
+  content: "";
+  display: block;
+  height: toRem(10);
+  left: -5%;
+  opacity: .6;
+  position: absolute;
+  width: 110%;
+  z-index: -1;
+}
+.mid-underline {
+  display: inline-block;
+  position: relative;
+  &:before{
+    background: var(--mp-coral);
+    bottom: -0.2em;
+    content: "";
+    display: block;
+    height: 0.8em;
+    left: -0.2em;
+    opacity: .6;
+    position: absolute;
+    width: calc(100% + .4em);
+    z-index: -1;
+  }
+}
+//Remove swiper blue color on Dots.
+.swiper {
+  .swiper-pagination {
+    .swiper-pagination-bullet {
+      background-color: #ddd;
+      opacity: 1;
+      &.swiper-pagination-bullet-active {
+        background-color: black;
+      }
+    }
+  }
+}
+
+.underline {
+  text-underline-position: from-font;
+}
+:root {
+  --notchSize: 10px;
+  --notchInnerSize: 9px;
+  --notchSize--half: 5px;
+}
+.notch {
+  clip-path: 
+    polygon(
+      0% var(--notchSize), 
+      var(--notchSize) 0%, 
+      calc(100% - var(--notchSize)) 0%, 
+      100% var(--notchSize), 
+      100% calc(100% - var(--notchSize)), 
+      calc(100% - var(--notchSize)) 100%, 
+      var(--notchSize) 100%, 
+      0% calc(100% - var(--notchSize))
+    );
+}
+.notch--inner {
+  clip-path: 
+    polygon(
+      0% var(--notchInnerSize), 
+      var(--notchInnerSize) 0%, 
+      calc(100% - var(--notchInnerSize)) 0%, 
+      100% var(--notchInnerSize), 
+      100% calc(100% - var(--notchInnerSize)), 
+      calc(100% - var(--notchInnerSize)) 100%, 
+      var(--notchInnerSize) 100%, 
+      0% calc(100% - var(--notchInnerSize))
+    );
+}
+.notch-button {
+  clip-path: 
+    polygon(
+      0% var(--notchSize--half), 
+      var(--notchSize) 0%, 
+      calc(100% - var(--notchSize)) 0%, 
+      100% var(--notchSize--half), 
+      100% calc(100% - var(--notchSize--half)), 
+      calc(100% - var(--notchSize)) 100%, 
+      var(--notchSize) 100%, 
+      0% calc(100% - var(--notchSize--half))
+    );
+}
